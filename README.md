@@ -9,9 +9,9 @@
  1. Go to *Settings -> Editor -> Log highlighting (Ideolog)*.
  2. Add new *Log format* (plus sign on the right of the top list).
  3. Put a name *Symfony* or whatever suits You.
- 4. In the field *Message pattern* place this regex: `^\[((?:\d{4}-\d{2}-\d{2})[\sT]\d{2}:\d{2}:\d{2})(?:\.\d+\+\d{2}:\d{2})?\]\s+([^.]+)\.([^:]+):\s+(.*)$`
+ 4. In the field *Message pattern* place this regex: `^\[(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d+-\d{2}:\d{2})] (\w+)\.(\w+): (.*)$`
  5. In the field *Message start pattern* put this regex: `^\[`.
- 6. In the field *Time format* put this pattern: `yyyy-MM-dd.HH:mm:ss`.
+ 6. In the field *Time format* put this pattern: `yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ`.
  7. In the field *Time capture group* set number **1**.
  8. In the field *Severity capture group* set number **3**.
  9. In the field *Category capture group* set number **2**.
