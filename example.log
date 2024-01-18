@@ -1,0 +1,24 @@
+[ATOM/W3C compliance (Y-m-d\TH:i:sP)]
+[2021-03-09T12:37:10+00:00] kernel.INFO: I am a happy log entry
+[2021-03-09T12:37:10+01:00] kernel.WARNING: Oops!
+[2021-03-09T12:37:10-01:00] kernel.ERROR: Oh snap, something went wrong.
+
+[ISO 8601 compliance (Y-m-d\TH:i:sO)]
+[2021-03-09T12:38:49+0000] kernel.INFO: I am a happy log entry
+[2021-03-09T12:38:49+1000] kernel.WARNING: Oops!
+[2021-03-09T12:38:49-1000] kernel.ERROR: Oh snap, something went wrong.
+
+[RFC 3339 compliance (Y-m-d\TH:i:sP)]
+[2021-03-09T06:39:46+00:00] kernel.INFO: I am a happy log entry
+[2021-03-09T06:39:46+01:00] kernel.WARNING: Oops!
+[2021-03-09T06:39:46-01:00] kernel.ERROR: Oh snap, something went wrong.
+
+[RFC 339 EXTENDED compliance (Y-m-d\TH:i:s.vP)]
+[2021-03-09T12:40:29.539+00:00] kernel.INFO: I am a happy log entry
+[2021-03-09T12:40:29.539+00:00] kernel.WARNING: Oops!
+[2021-03-09T12:40:29.539+00:00] kernel.ERROR: Oh snap, something went wrong.
+
+[Non-standard compliance (without timezone) (Y-m-d H:i:s), (Y-d-m H:i:s)]
+[2021-03-09 12:45:24] kernel.INFO: I am a happy log entry
+[2021-09-03 12:45:24] kernel.WARNING: Oops!
+[2021-09-03 12:45:24] kernel.ERROR: Oh snap, something went wrong.
