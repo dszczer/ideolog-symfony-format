@@ -4,8 +4,18 @@
 
  * PHPStorm
  * Installed and running **Ideolog** plugin
- 
-# Setting up
+
+## Import settings
+
+Easiest way is to import Ideolog settings into your IDE.
+
+1. Download `ideologSymfonyFormat.xml` file.
+2. Go to *Settings -> Editor -> Log highlighting (Ideolog)*.
+3. Click *Import* button and select downloaded XML file. Activate new pattern if needed.
+4. Download or copy/paste `example.log` to test if everything is OK.
+
+
+## Manual setting up
  1. Go to *Settings -> Editor -> Log highlighting (Ideolog)*.
  2. Add new *Log format* (plus sign on the right of the top list).
  3. Put a name *Symfony* or whatever suits You.
@@ -16,10 +26,10 @@
  8. In the field *Severity capture group* set number **3**.
  9. In the field *Category capture group* set number **2**.
  10. Push *OK* button. You're almost done!
- 
-# Tweaks
 
-## Critical severity
+## Tweaks
+
+### Critical severity
 To make *CRITICAL* severity to highlight do following steps:
  1. Go to *Settings -> Editor -> Log highlighting (Ideolog)*.
  2. Add new *Pattern* (plus sign on the right of the bottom-left list).
