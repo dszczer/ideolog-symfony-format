@@ -22,3 +22,22 @@
 [2021-03-09 12:45:24] kernel.INFO: I am a happy log entry
 [2021-09-03 12:45:24] kernel.WARNING: Oops!
 [2021-09-03 12:45:24] kernel.ERROR: Oh snap, something went wrong.
+
+[Issue #10: Stacktrace break format]
+[2023-06-16T08:40:12.289166+00:00] messenger.WARNING: Error thrown while handling message App\Message\TestQueue
+[stacktrace]
+#0 /app/vendor/symfony/messenger/Middleware/SendMessageMiddleware.php(71): Symfony\\Component\\Messenger\\Middleware\HandleMessageMiddleware
+#1 /app/vendor/symfony/doctrine-bridge/Messenger/Something.php(33): Symfony\\Component\\Messenger\\Middleware\BlahBlah
+#2 /app/vendor/symfony/doctrine-bridge/Messenger/Nothing.php(33): Symfony\\Component\\Messenger\\Middleware\Blah
+#3 /app/vendor/symfony/doctrine-bridge/Messenger/Everything.php(33): Symfony\\Component\\Messenger\\Middleware\Foo
+#4 /app/vendor/symfony/doctrine-bridge/Messenger/Middleware.php(33): Symfony\\Component\\Messenger\\Middleware\Bar
+#5 /app/vendor/symfony/messenger/Messenger/Bus.php(33): Symfony\\Component\\Messenger\\Middleware\Lorem
+#6 /app/vendor/symfony/messenger/Messenger/OtherBus.php(33): Symfony\\Component\\Messenger\\Middleware\Ipsum
+#7 /app/vendor/symfony/messenger/Messenger/MoreBuses.php(33): Symfony\\Component\\Messenger\\Middleware\BlahBlah
+#8 /app/vendor/symfony/console/Messenger/SubCommand.php(33): Symfony\\Component\\Messenger\\Middleware\BlahBlah
+#9 /app/vendor/symfony/console/Messenger/MasterCommand.php(33): Symfony\\Component\\Messenger\\Middleware\BlahBlah
+#10 /app/vendor/symfony/console/AbstractCommand.php(33): Symfony\\Component\\Messenger\\Middleware\Nope
+#11 /app/vendor/symfony/framework/Application.php(33): Symfony\\Component\\Messenger\\Middleware\BlahBla
+[2021-03-09T12:38:49+0000] kernel.DEBUG: Executing statement: INSERT INTO messenger_messages (body, headers, queue_name, created_at, available_at) VALUES(?, ?, ?, ?, ?)
+[2021-03-09 12:45:24] eventbus.INFO: Exception logged successfully to all listeners
+[2021-03-09T12:38:49-1000] kernel.ERROR: Terminating app

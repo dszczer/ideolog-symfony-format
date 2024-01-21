@@ -20,7 +20,7 @@ Easiest way is to import Ideolog settings into your IDE.
  2. Add new *Log format* (plus sign on the right of the top list).
  3. Put a name *Symfony* or whatever suits You.
  4. In the field *Message pattern* place this regex: `^\[(\d{4}-\d{2}-\d{2}[T\s]?\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:[\+-]\d{2}:?\d{2})?)]\s+(\w+)\.(\w+):([^\n]*)$`
- 5. In the field *Message start pattern* put this regex: `^\[`.
+ 5. In the field *Message start pattern* put this regex: `^[\[#]`.
  6. In the field *Time format* put pattern that matches your case, e.g.: `yyyy-MM-dd'T'HH:mm:ss.SSSSSSZ`.
  7. In the field *Time capture group* set number **1**.
  8. In the field *Severity capture group* set number **3**.
